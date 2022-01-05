@@ -1,0 +1,204 @@
+%-------------------------
+% Resume in Latex
+% Author : Nivesh Singh
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://nivesh.dev}{\Large Nivesh Singh}} & Email : \href{mailto:nivesh2@live.in}{nivesh2@live.in}\\
+  \href{https://www.credly.com/badges/8a901a05-7da4-42de-a2cb-c3b924a1eac9/public_url}{AWS Certified Solutions Architect - Associate} & Mobile : +91-880-069-1089 \\
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Loved Investing}{Gurgaon/Remote, IN}
+      {Associate Technical Architect, one platform for banking and investing services for GenZ.}{Oct 2020 - Present}
+      \resumeItemListStart
+        \resumeItem{Customer Obsession}
+          {Analyse customer pain points with the support team and design solutions around them to reduce customer pain. More emphasis on customer analytics thereby adding more transparency.}
+        \resumeItem{Empower team}
+          {Delegate owned services to other team members and empower them to become a leader. More emphasis on reviewing their solutions/code, also prioritize knowledge sharing across the team.}
+        \resumeItem{Loved Banking}
+          {Architect and integrate banking services provided by Synapsefi. Empower parents with the ability to create kids checking accounts, custom loved debit cards and send stocks as gifts to other kids.}
+        \resumeItem{Monitoring and Alerting}
+          {Design system-wide real-time log monitoring and alerting, for better visibility. Forward CloudWatch logs to DataDog, create service monitors in DataDog dynamically via project specific .yml file. Push monitor generated alerts to Pagerduty for real-time notification to service owners based on severity.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Loved Investing}{Gurgaon/Remote, IN}
+      {Technical Lead, a seed stage US based investing platform for kids and parents.}{May 2019 - Oct 2020}
+      \resumeItemListStart
+        \resumeItem{Account and funding service}
+          {Direct integration with APEX Clearing, a US clearing \& custody provider, thus allowing seamless user onboarding. Integration with Plaid to enable users to link their banks.}
+        \resumeItem{Compliance and Risk service}
+          {Design loved core risk service, integrate socure, twilio and plaid identity services to generate multi-level risk score. Also, other numerous system-wide triggers also affect the risk score.}
+        \resumeItem{Build vs Die}
+          {Explore and integrate directly with service providers for redundant functionalities like stock historical charts, CMS, manage customer tickets, user referrals and email/sms notification campaigns.}
+        \resumeItem{Platform level node module}
+          {Collaborate with fellow leads to create a custom loved node package to be shared across all the microservices. The package would help a developer to get instant access to loved AWS resources and other libraries. Thereby making code more consistent and simple to write/review.}
+        \resumeItem{Design principles:}
+          {Event-driven and immutable system design. Resilient systems with auto-healing processes.}
+        \resumeItem{Serverless Technologies}
+          {AWS SAM(lambda framework), AppSync(GraphQL), SQS, SNS, S3, Step functions, AWS Batch, EventBridge, DynamoDB, DB Streams, Aurora Serverless(mySQL), AWS ElasticCache(redis), AWS OpenSearch(ElasticSearch), Redshift, Cloudformation(infrastructure template), CodePipeline, ECS.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Nium}{Mumbai, IN}
+      {Node.JS Developer, reappointed by previous company, now a billion dollar startup.}{Nov 2018 - May 2019}
+      \resumeItemListStart
+        \resumeItem{China corridor}
+          {Integration with Bank of Shanghai for opening china as a remittance corridor, visited Shanghai.}
+        \resumeItem{Team Lead}
+          {Assigned to new innovation team, explored integration with whatsapp for business and Alexa.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Self Employed}{Remote, IN}
+      {Software Consultant, exploring remote/freelance options.}{May 2018 - Nov 2018}
+      \resumeItemListStart
+        \resumeItem{Goldcanvas, US}
+          {Built marketplace for artists \& collectors, with integrated payment and shipping in Express.JS}
+        \resumeItem{LovedWealth, US}
+          {Help write automated end-to-end test cases across 50+ microservices, using mocha and chai.}
+        \resumeItem{Nashpay, SG}
+          {Developed in-house monitoring and alerting system for a crypto-currency payment gateway.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Instarem (now Nium)}{Mumbai, IN}
+      {Software Developer, budding Singapore based cross border remittance startup.}{Dec 2016 - May 2018}
+      \resumeItemListStart
+        \resumeItem{Kyc Engine}
+          {Multi-country user on-boarding, with automated document and liveliness verification.}
+        \resumeItem{Compliance Engine}
+          {Built a robust multi-country compliance system as per regulatory requirements.}
+        \resumeItem{Payment Gateway}
+          {Integrated with various banks and payment gateways for remittance to multiple countries.}
+        \resumeItem{Service Discovery}
+          {Developed an in-house service discovery bus using rabbitMQ to decouple various microservices.}
+        \resumeItem{Technologies Used}
+          {AWS EC2, express.js, hapiJS, mongoDB, postgresSQL, redis, rabbitMQ and vue.js.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Tech Mahindra}{Delhi NCR, IN}
+      {Software Engineer, a multinational IT Solutions provider.}{Sep 2014 - Nov 2016}
+      \resumeItemListStart
+        \resumeItem{AT\&T Client}
+          {Rewrite of entire enterprise Java application, built on IBM Websphere.}
+        \resumeItem{Technologies Used}
+          {J2EE, Struts 2, JMS, JAXM, EJB, Hibernate, JMeter, Jenkins, Oracle SQL and PL/SQL.}
+          
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Github Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Mulit-ICO Decentralized app}
+      {Smart contract for a multi-ICO creation portal built-in E\&Y Hackathon 2017.}
+    \resumeSubItem{Smart home}
+      {Using aws iot, node.js and mediaTek hardware micro-controller, Google Code for India 2016.}
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Madan Mohan Malaviya University of Technology}{Gorakhpur, India}
+      {B.Tech in Computer Science Engineering;  Grade:73\%}{Aug. 2010 - May. 2014}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}{C, C++, Java, Javascript.}
+    \resumeSubItem{Technologies}{Node.JS, GraphQL, AWS, SQL, NO-SQL Databases, Serverless Design, Streams, Micro-services.}
+  \resumeSubHeadingListEnd
+  
+%--------CURRENT INTEREST------------
+\section{Current Interest}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Domain}{: Blockchain, BNPL and open banking.}
+      \hfill
+      \textbf{Programming language}{: Golang.}
+    }
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
